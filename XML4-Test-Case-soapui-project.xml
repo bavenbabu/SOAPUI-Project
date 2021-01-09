@@ -1,0 +1,1025 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="658e9e53-41f5-48e0-87ba-449091b73291" activeEnvironment="Default" name="XML4 Test Case" resourceRoot="" soapui-version="5.6.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="27999ede-7f3b-4f94-9950-bd241532070a" wsaVersion="NONE" name="HBSI_XML4_OTA_WebserviceSoap" type="wsdl" bindingName="{http://www.demandmatrix.net/HBSIXML4/}HBSI_XML4_OTA_WebserviceSoap" soapVersion="1_1" anonymous="optional" definition="http://hotfix.hbsconnect.com/HBSIXML4/SOAP.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://hotfix.hbsconnect.com/HBSIXML4/SOAP.asmx</con:endpoint></con:endpoints><con:operation id="4a095105-08c6-4166-8a2b-c4abb3e359cd" isOneWay="false" action="http://www.demandmatrix.net/HBSIXML4/EchoReplay" name="EchoReplay" bindingOperationName="EchoReplay" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b5d303ae-5337-4857-a6dd-1b55d3d553fa" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://hotfix.hbsconnect.com/HBSIXML4/SOAP.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hbs="http://www.demandmatrix.net/HBSIXML4/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <hbs:EchoReplay>\r
+         <!--Optional:-->\r
+         <hbs:Message>?</hbs:Message>\r
+      </hbs:EchoReplay>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.demandmatrix.net/HBSIXML4/EchoReplay"/></con:call></con:operation><con:operation id="5fbb3094-5430-4156-bb00-8a2dad6b1886" isOneWay="false" action="http://www.demandmatrix.net/HBSIXML4/GetSoapRequest" name="GetSoapRequest" bindingOperationName="GetSoapRequest" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6557701c-beb8-4b42-9d79-15760f11d707" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://hotfix.hbsconnect.com/HBSIXML4/SOAP.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hbs="http://www.demandmatrix.net/HBSIXML4/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <hbs:GetSoapRequest>\r
+         <!--Optional:-->\r
+         <hbs:InterfacePayload>\r
+            <!--Optional:-->\r
+            <hbs:ChannelIdentifierId>?</hbs:ChannelIdentifierId>\r
+            <!--Optional:-->\r
+            <hbs:Version>?</hbs:Version>\r
+            <!--Optional:-->\r
+            <hbs:Interface>?</hbs:Interface>\r
+            <!--Optional:-->\r
+            <hbs:CustomerId>?</hbs:CustomerId>\r
+            <!--Optional:-->\r
+            <hbs:URL>?</hbs:URL>\r
+            <hbs:TimeOut>?</hbs:TimeOut>\r
+         </hbs:InterfacePayload>\r
+         <!--Optional:-->\r
+         <hbs:Message>\r
+            <!--Optional:-->\r
+            <hbs:RequestId>?</hbs:RequestId>\r
+            <hbs:Transaction>?</hbs:Transaction>\r
+            <!--Optional:-->\r
+            <hbs:XML>?</hbs:XML>\r
+         </hbs:Message>\r
+         <!--Optional:-->\r
+         <hbs:Login>\r
+            <hbs:LoginType>?</hbs:LoginType>\r
+            <!--Optional:-->\r
+            <hbs:OrganisationInfo>\r
+               <!--Optional:-->\r
+               <hbs:Id>?</hbs:Id>\r
+               <!--Optional:-->\r
+               <hbs:User>?</hbs:User>\r
+               <!--Optional:-->\r
+               <hbs:Pwd>?</hbs:Pwd>\r
+            </hbs:OrganisationInfo>\r
+            <!--Optional:-->\r
+            <hbs:SupplierInfo>\r
+               <hbs:ComponentType>?</hbs:ComponentType>\r
+               <!--Optional:-->\r
+               <hbs:Id>?</hbs:Id>\r
+               <!--Optional:-->\r
+               <hbs:User>?</hbs:User>\r
+               <!--Optional:-->\r
+               <hbs:Pwd>?</hbs:Pwd>\r
+            </hbs:SupplierInfo>\r
+            <!--Optional:-->\r
+            <hbs:ComponentInfo>\r
+               <hbs:ComponentType>?</hbs:ComponentType>\r
+               <!--Optional:-->\r
+               <hbs:Id>?</hbs:Id>\r
+               <!--Optional:-->\r
+               <hbs:User>?</hbs:User>\r
+               <!--Optional:-->\r
+               <hbs:Pwd>?</hbs:Pwd>\r
+            </hbs:ComponentInfo>\r
+         </hbs:Login>\r
+      </hbs:GetSoapRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.demandmatrix.net/HBSIXML4/GetSoapRequest"/></con:call></con:operation><con:operation id="05b2d34a-ecf5-4572-abdb-5155b6237e6b" isOneWay="false" action="http://www.demandmatrix.net/HBSIXML4/GetSoapRequestAsASCII" name="GetSoapRequestAsASCII" bindingOperationName="GetSoapRequestAsASCII" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c034374d-eeac-4117-8480-70b4c6e282b8" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://hotfix.hbsconnect.com/HBSIXML4/SOAP.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hbs="http://www.demandmatrix.net/HBSIXML4/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <hbs:GetSoapRequestAsASCII>\r
+         <!--Optional:-->\r
+         <hbs:ASCII>?</hbs:ASCII>\r
+      </hbs:GetSoapRequestAsASCII>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.demandmatrix.net/HBSIXML4/GetSoapRequestAsASCII"/></con:call></con:operation><con:operation id="9aeaa4fa-d7f4-4ddb-9c3b-f9003029e862" isOneWay="false" action="http://www.demandmatrix.net/HBSIXML4/GetSoapRequestAsXML" name="GetSoapRequestAsXML" bindingOperationName="GetSoapRequestAsXML" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="206d2d9d-2f75-406f-8869-b27c85ba9b33" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://hotfix.hbsconnect.com/HBSIXML4/SOAP.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hbs="http://www.demandmatrix.net/HBSIXML4/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <hbs:GetSoapRequestAsXML>\r
+         <!--Optional:-->\r
+         <hbs:XML>?</hbs:XML>\r
+      </hbs:GetSoapRequestAsXML>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.demandmatrix.net/HBSIXML4/GetSoapRequestAsXML"/></con:call></con:operation><con:operation id="90275006-24d1-4fd0-a41f-214bc7237099" isOneWay="false" action="http://www.demandmatrix.net/HBSIXML4/GetVersionInfo" name="GetVersionInfo" bindingOperationName="GetVersionInfo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="853e816f-6859-45b4-aa7a-17d4758a8158" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://hotfix.hbsconnect.com/HBSIXML4/SOAP.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hbs="http://www.demandmatrix.net/HBSIXML4/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <hbs:GetVersionInfo/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.demandmatrix.net/HBSIXML4/GetVersionInfo"/></con:call></con:operation><con:operation id="8b90d51b-57be-4a42-8fc7-c22c1c351cbf" isOneWay="false" action="http://www.demandmatrix.net/HBSIXML4/PutSoapRequest" name="PutSoapRequest" bindingOperationName="PutSoapRequest" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="65482920-8439-4e10-afed-535bcdb8424d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://hotfix.hbsconnect.com/HBSIXML4/SOAP.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hbs="http://www.demandmatrix.net/HBSIXML4/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <hbs:PutSoapRequest>\r
+         <!--Optional:-->\r
+         <hbs:InterfacePayload>\r
+            <!--Optional:-->\r
+            <hbs:ChannelIdentifierId>?</hbs:ChannelIdentifierId>\r
+            <!--Optional:-->\r
+            <hbs:Version>?</hbs:Version>\r
+            <!--Optional:-->\r
+            <hbs:Interface>?</hbs:Interface>\r
+            <!--Optional:-->\r
+            <hbs:CustomerId>?</hbs:CustomerId>\r
+            <!--Optional:-->\r
+            <hbs:URL>?</hbs:URL>\r
+            <hbs:TimeOut>?</hbs:TimeOut>\r
+         </hbs:InterfacePayload>\r
+         <!--Optional:-->\r
+         <hbs:Message>\r
+            <!--Optional:-->\r
+            <hbs:RequestId>?</hbs:RequestId>\r
+            <hbs:Transaction>?</hbs:Transaction>\r
+            <!--Optional:-->\r
+            <hbs:XML>?</hbs:XML>\r
+         </hbs:Message>\r
+         <!--Optional:-->\r
+         <hbs:Login>\r
+            <hbs:LoginType>?</hbs:LoginType>\r
+            <!--Optional:-->\r
+            <hbs:OrganisationInfo>\r
+               <!--Optional:-->\r
+               <hbs:Id>?</hbs:Id>\r
+               <!--Optional:-->\r
+               <hbs:User>?</hbs:User>\r
+               <!--Optional:-->\r
+               <hbs:Pwd>?</hbs:Pwd>\r
+            </hbs:OrganisationInfo>\r
+            <!--Optional:-->\r
+            <hbs:SupplierInfo>\r
+               <hbs:ComponentType>?</hbs:ComponentType>\r
+               <!--Optional:-->\r
+               <hbs:Id>?</hbs:Id>\r
+               <!--Optional:-->\r
+               <hbs:User>?</hbs:User>\r
+               <!--Optional:-->\r
+               <hbs:Pwd>?</hbs:Pwd>\r
+            </hbs:SupplierInfo>\r
+            <!--Optional:-->\r
+            <hbs:ComponentInfo>\r
+               <hbs:ComponentType>?</hbs:ComponentType>\r
+               <!--Optional:-->\r
+               <hbs:Id>?</hbs:Id>\r
+               <!--Optional:-->\r
+               <hbs:User>?</hbs:User>\r
+               <!--Optional:-->\r
+               <hbs:Pwd>?</hbs:Pwd>\r
+            </hbs:ComponentInfo>\r
+         </hbs:Login>\r
+      </hbs:PutSoapRequest>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.demandmatrix.net/HBSIXML4/PutSoapRequest"/></con:call></con:operation><con:operation id="76df33a2-2e66-4a0d-bd4b-b63eda310aad" isOneWay="false" action="http://www.demandmatrix.net/HBSIXML4/PutSoapRequestWithPartnersException" name="PutSoapRequestWithPartnersException" bindingOperationName="PutSoapRequestWithPartnersException" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f0cdb5d6-bdc9-4148-a877-b73be951d788" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://hotfix.hbsconnect.com/HBSIXML4/SOAP.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:hbs="http://www.demandmatrix.net/HBSIXML4/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <hbs:PutSoapRequestWithPartnersException>\r
+         <!--Optional:-->\r
+         <hbs:InterfacePayload>\r
+            <!--Optional:-->\r
+            <hbs:ChannelIdentifierId>?</hbs:ChannelIdentifierId>\r
+            <!--Optional:-->\r
+            <hbs:Version>?</hbs:Version>\r
+            <!--Optional:-->\r
+            <hbs:Interface>?</hbs:Interface>\r
+            <!--Optional:-->\r
+            <hbs:CustomerId>?</hbs:CustomerId>\r
+            <!--Optional:-->\r
+            <hbs:URL>?</hbs:URL>\r
+            <hbs:TimeOut>?</hbs:TimeOut>\r
+         </hbs:InterfacePayload>\r
+         <!--Optional:-->\r
+         <hbs:Message>\r
+            <!--Optional:-->\r
+            <hbs:RequestId>?</hbs:RequestId>\r
+            <hbs:Transaction>?</hbs:Transaction>\r
+            <!--Optional:-->\r
+            <hbs:XML>?</hbs:XML>\r
+         </hbs:Message>\r
+         <!--Optional:-->\r
+         <hbs:Login>\r
+            <hbs:LoginType>?</hbs:LoginType>\r
+            <!--Optional:-->\r
+            <hbs:OrganisationInfo>\r
+               <!--Optional:-->\r
+               <hbs:Id>?</hbs:Id>\r
+               <!--Optional:-->\r
+               <hbs:User>?</hbs:User>\r
+               <!--Optional:-->\r
+               <hbs:Pwd>?</hbs:Pwd>\r
+            </hbs:OrganisationInfo>\r
+            <!--Optional:-->\r
+            <hbs:SupplierInfo>\r
+               <hbs:ComponentType>?</hbs:ComponentType>\r
+               <!--Optional:-->\r
+               <hbs:Id>?</hbs:Id>\r
+               <!--Optional:-->\r
+               <hbs:User>?</hbs:User>\r
+               <!--Optional:-->\r
+               <hbs:Pwd>?</hbs:Pwd>\r
+            </hbs:SupplierInfo>\r
+            <!--Optional:-->\r
+            <hbs:ComponentInfo>\r
+               <hbs:ComponentType>?</hbs:ComponentType>\r
+               <!--Optional:-->\r
+               <hbs:Id>?</hbs:Id>\r
+               <!--Optional:-->\r
+               <hbs:User>?</hbs:User>\r
+               <!--Optional:-->\r
+               <hbs:Pwd>?</hbs:Pwd>\r
+            </hbs:ComponentInfo>\r
+         </hbs:Login>\r
+         <hbs:IsException>?</hbs:IsException>\r
+      </hbs:PutSoapRequestWithPartnersException>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.demandmatrix.net/HBSIXML4/PutSoapRequestWithPartnersException"/></con:call></con:operation></con:interface><con:testSuite id="9ba73375-f3c4-417a-b519-74db68391e06" name="XMl4T"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="ece53ce2-c583-454f-a5e4-67f39f7d2189" failOnError="false" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Close Restriction Search" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword=""><con:settings/><con:testStep type="request" name="Close restriction" id="61f691bb-8973-4dee-b83a-1a40e68f4c7d"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HBSI_XML4_OTA_WebserviceSoap</con:interface><con:operation>PutSoapRequest</con:operation><con:request name="Close restriction" id="23925b25-f190-4430-93de-b4f1c0ffd256"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://hotfix.hbsconnect.com/app/dm/xml</con:endpoint><con:request><![CDATA[<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+ <soap-env:Header>
+  <Interface ChannelIdentifierId="HBSI XML 4 OTA DC" Version="2005A" Interface="HBSI XML 4 OTA" xmlns="http://www.hbsiapi.com/Documentation/XML/OTA/4/2005A/">
+   <ComponentInfo Id="48811" User="test" Pwd="test" ComponentType="Hotel" />
+  </Interface>
+ </soap-env:Header>
+ <soap-env:Body RequestId="200708310425065wZvZr5Ofh" Transaction="HotelAvailRQ">
+  <OTA_HotelAvailRQ Target="Test" Version="1.003" TimeStamp="2006-12-14T15:28:29+01:00" xmlns="http://www.opentravel.org/OTA/2003/05" BestOnly="false" SummaryOnly="false" SortOrder="A" MaxResponses="50000">
+   <POS>
+    <Source>
+     <RequestorID Type="18" ID="Partner" />
+     <BookingChannel Type="2" Primary="true">
+      <CompanyName>Hotel_Property</CompanyName>
+     </BookingChannel>
+    </Source>
+   </POS>
+   <AvailRequestSegments>
+    <AvailRequestSegment>
+     <HotelSearchCriteria>
+      <Criterion ImportanceType="Mandatory">
+       <StayDateRange Start="2021-01-17" Duration="Day" End="2021-01-19"/>
+       <RateRange RoomStayCandidateRPH="0" MinRate="0.00" MaxRate="50000.00" RateTimeUnit="Day" CurrencyCode="USD" DecimalPlaces="2"/>
+       <RatePlanCandidates>
+        <RatePlanCandidate RatePlanCode="BAR1" RPH="1">
+         <HotelRefs>
+          <HotelRef HotelCode="48811" />
+         </HotelRefs>
+        </RatePlanCandidate>
+        <RatePlanCandidate RatePlanCode="BAR4" RPH="1">
+         <HotelRefs>
+          <HotelRef HotelCode="48811" />
+         </HotelRefs>
+        </RatePlanCandidate>
+        <RatePlanCandidate RatePlanCode="BAR1" RPH="1">
+         <HotelRefs>
+          <HotelRef HotelCode="48812" />
+         </HotelRefs>
+        </RatePlanCandidate>
+        <RatePlanCandidate RatePlanCode="BAR4" RPH="1">
+         <HotelRefs>
+          <HotelRef HotelCode="48812" />
+         </HotelRefs>
+        </RatePlanCandidate>
+       </RatePlanCandidates>
+       <RoomStayCandidates>
+        <RoomStayCandidate RoomType="DELUXE" RoomTypeCode="DELUXE" Quantity="1" RPH="2" RatePlanCandidateRPH="1">
+         <GuestCounts IsPerRoom="true">
+          <GuestCount AgeQualifyingCode="10" Count="1" />
+         </GuestCounts>
+        </RoomStayCandidate>
+        <RoomStayCandidate RoomType="DOUBLE" RoomTypeCode="DOUBLE" Quantity="1" RPH="2" RatePlanCandidateRPH="1">
+         <GuestCounts IsPerRoom="true">
+          <GuestCount AgeQualifyingCode="10" Count="1" />
+         </GuestCounts>
+        </RoomStayCandidate>
+       </RoomStayCandidates>
+      </Criterion>
+     </HotelSearchCriteria>
+    </AvailRequestSegment>
+   </AvailRequestSegments>
+  </OTA_HotelAvailRQ>
+ </soap-env:Body>
+</soap-env:Envelope>]]></con:request><con:assertion type="GroovyScriptAssertion" id="ce011630-b523-4f66-808d-51cbb9c1949b" name="Script Assertion"><con:configuration><scriptText>
+import com.eviware.soapui.support.XmlHolder
+import com.eviware.soapui.impl.wsdl.support.assertions.*
+
+
+def holder=new XmlHolder(messageExchange.responseContentAsXml)
+
+
+//assert holder["/*:Envelope/*:Body/*:OTA_HotelAvailRS"] != "Errors"
+def responseXml = holder.getPrettyXml()
+assert responseXml.contains('Closed')
+//def holder = new XmlHolder( messageExchange.responseContentAsXml )
+
+//assert holder["/*:Envelope/*:soap-env:Body/*:OTA_HotelAvailRS/*:Warnings"] =closed</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="17a6bb5f-43db-47bc-9ac2-08c1fccc89f0" failOnError="false" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Verify Multirateplan rate code room code candidate" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword=""><con:settings/><con:testStep type="request" name="MultiRateplanRoomcode" id="86d77c58-4547-424f-b3f8-7c98354f1ea9"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HBSI_XML4_OTA_WebserviceSoap</con:interface><con:operation>PutSoapRequest</con:operation><con:request name="MultiRateplanRoomcode" id="23925b25-f190-4430-93de-b4f1c0ffd256"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://hotfix.hbsconnect.com/app/dm/xml</con:endpoint><con:request><![CDATA[<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap-env:Header>
+    <Interface ChannelIdentifierId="HBSI XML 4 OTA DC" Version="2005A" Interface="HBSI XML 4 OTA" xmlns="http://www.hbsiapi.com/Documentation/XML/OTA/4/2005A/">
+      <ComponentInfo Id="48811" User="test" Pwd="test"  ComponentType="Hotel"  />
+    </Interface>
+  </soap-env:Header>
+  <soap-env:Body RequestId="200708310425065wZvZr5Ofh" Transaction="HotelAvailRQ">
+    <OTA_HotelAvailRQ Target="Test" Version="1.003" TimeStamp="2006-12-14T15:28:29+01:00"
+    xmlns="http://www.opentravel.org/OTA/2003/05" BestOnly="false" SummaryOnly="false" SortOrder="A" MaxResponses="50000" >
+      <POS>
+        <Source>
+          <RequestorID Type="18" ID="Partner"/>
+          <BookingChannel Type="2" Primary="true">
+            <CompanyName>Hotel_Property</CompanyName>
+          </BookingChannel>
+        </Source>
+      </POS>
+      <AvailRequestSegments>
+        <AvailRequestSegment>
+          <HotelSearchCriteria>
+            <Criterion ImportanceType="Mandatory">
+              <StayDateRange Start="2021-03-10" Duration="Day" End="2021-03-15">
+              </StayDateRange>
+              <RateRange RoomStayCandidateRPH="0" MinRate="0.00" MaxRate="50000.00" RateTimeUnit="Day" CurrencyCode="USD"
+
+               DecimalPlaces="2">
+              </RateRange>
+              <RatePlanCandidates>
+                <RatePlanCandidate RatePlanCode="BAR1" RPH="1">
+                  <HotelRefs>
+                    <HotelRef HotelCode="48811" />
+                  </HotelRefs>
+                </RatePlanCandidate>
+                <RatePlanCandidate RatePlanCode="BAR4" RPH="1">
+                  <HotelRefs>
+                    <HotelRef HotelCode="48811" />
+                  </HotelRefs>
+                </RatePlanCandidate>
+                <RatePlanCandidate RatePlanCode="BAR1" RPH="1">
+                  <HotelRefs>
+                    <HotelRef HotelCode="48812" />
+                  </HotelRefs>
+                </RatePlanCandidate>
+                <RatePlanCandidate RatePlanCode="BAR4" RPH="1">
+                  <HotelRefs>
+                    <HotelRef HotelCode="48812" />
+                  </HotelRefs>
+                </RatePlanCandidate>
+              </RatePlanCandidates>
+              <RoomStayCandidates>
+                <RoomStayCandidate RoomType="DELUXE" RoomTypeCode="DELUXE"  Quantity="1"  RPH="2" RatePlanCandidateRPH="1">
+                  <GuestCounts IsPerRoom="true">
+                    <GuestCount AgeQualifyingCode="10"  Count="1"/>
+
+                  </GuestCounts>
+                </RoomStayCandidate>
+                <RoomStayCandidate RoomType="DOUBLE" RoomTypeCode="DOUBLE"  Quantity="1"  RPH="2" RatePlanCandidateRPH="1">
+                  <GuestCounts IsPerRoom="true">
+                    <GuestCount AgeQualifyingCode="10"  Count="1"/>
+
+                  </GuestCounts>
+                </RoomStayCandidate>
+              </RoomStayCandidates>
+            </Criterion>
+            
+          </HotelSearchCriteria>
+        </AvailRequestSegment>
+      </AvailRequestSegments>
+    </OTA_HotelAvailRQ>
+  </soap-env:Body>
+</soap-env:Envelope>]]></con:request><con:assertion type="GroovyScriptAssertion" id="ce011630-b523-4f66-808d-51cbb9c1949b" name="Script Assertion"><con:configuration><scriptText>
+import com.eviware.soapui.support.XmlHolder
+import com.eviware.soapui.impl.wsdl.support.assertions.*
+
+
+def holder=new XmlHolder(messageExchange.responseContentAsXml)
+
+
+//assert holder["/*:Envelope/*:Body/*:OTA_HotelAvailRS"] != "Errors"
+def responseXml = holder.getPrettyXml()
+assert responseXml.contains('NumberOfUnits')
+//def holder = new XmlHolder( messageExchange.responseContentAsXml )
+
+//assert holder["/*:Envelope/*:soap-env:Body/*:OTA_HotelAvailRS/*:Warnings"] =closed</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:tearDownScript>// Code to execute the GenerateCSVReport test step
+testRunner.testCase.testSuite.project.testSuites["Library"].testCases["Reporting_Utility"].
+testSteps["GenerateCSVReport"].run(testRunner, context);</con:tearDownScript><con:properties/></con:testCase><con:testCase id="23124c2c-085d-4a80-894a-9a27c2aeb88c" failOnError="false" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Single rate code mUltiple room code search" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword=""><con:description>update the above property 2 and add BAR4 Double</con:description><con:settings/><con:testStep type="request" name="Single rate code mUltiple room code search" id="57187dc9-52c6-4ece-880f-a1595cf4f544"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HBSI_XML4_OTA_WebserviceSoap</con:interface><con:operation>PutSoapRequest</con:operation><con:request name="Single rate code mUltiple room code search" id="703e8162-0d68-4484-a8dc-f04e0a8bd375"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://hotfix.hbsconnect.com/app/dm/xml</con:endpoint><con:request><![CDATA[<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap-env:Header>
+    <Interface ChannelIdentifierId="HBSI XML 4 OTA DC" Version="2005A" Interface="HBSI XML 4 OTA" xmlns="http://www.hbsiapi.com/Documentation/XML/OTA/4/2005A/">
+      <ComponentInfo Id="48811" User="test" Pwd="test"  ComponentType="Hotel"  />
+    </Interface>
+  </soap-env:Header>
+  <soap-env:Body RequestId="200708310425065wZvZr5Ofh" Transaction="HotelAvailRQ">
+    <OTA_HotelAvailRQ Target="Test" Version="1.003" TimeStamp="2006-12-14T15:28:29+01:00"
+    xmlns="http://www.opentravel.org/OTA/2003/05" BestOnly="false" SummaryOnly="false" SortOrder="A" MaxResponses="50000" >
+      <POS>
+        <Source>
+          <RequestorID Type="18" ID="Partner"/>
+          <BookingChannel Type="2" Primary="true">
+            <CompanyName>Hotel_Property</CompanyName>
+          </BookingChannel>
+        </Source>
+      </POS>
+      <AvailRequestSegments>
+        <AvailRequestSegment>
+          <HotelSearchCriteria>
+            <Criterion ImportanceType="Mandatory">
+              <StayDateRange Start="2021-03-10" Duration="Day" End="2021-03-15">
+              </StayDateRange>
+              <RateRange RoomStayCandidateRPH="0" MinRate="0.00" MaxRate="50000.00" RateTimeUnit="Day" CurrencyCode="USD"
+
+               DecimalPlaces="2">
+              </RateRange>
+              <RatePlanCandidates>
+                <RatePlanCandidate RatePlanCode="BAR1" RPH="1">
+                  <HotelRefs>
+                    <HotelRef HotelCode="48811" />
+                    <HotelRef HotelCode="48812" />
+                  </HotelRefs>
+                </RatePlanCandidate>
+              
+               
+              </RatePlanCandidates>
+              <RoomStayCandidates>
+                <RoomStayCandidate RoomType="DELUXE" RoomTypeCode="DELUXE"  Quantity="1"  RPH="2" RatePlanCandidateRPH="1">
+                  <GuestCounts IsPerRoom="true">
+                    <GuestCount AgeQualifyingCode="10"  Count="1"/>
+
+                  </GuestCounts>
+                </RoomStayCandidate>
+                <RoomStayCandidate RoomType="DOUBLE" RoomTypeCode="DOUBLE"  Quantity="1"  RPH="2" RatePlanCandidateRPH="1">
+                  <GuestCounts IsPerRoom="true">
+                    <GuestCount AgeQualifyingCode="10"  Count="1"/>
+
+                  </GuestCounts>
+                </RoomStayCandidate>
+              </RoomStayCandidates>
+            </Criterion>
+
+          </HotelSearchCriteria>
+        </AvailRequestSegment>
+      </AvailRequestSegments>
+    </OTA_HotelAvailRQ>
+  </soap-env:Body>
+</soap-env:Envelope>]]></con:request><con:assertion type="GroovyScriptAssertion" id="84126843-d6ec-4c54-871f-c56735d781b0" name="Script Assertion"><con:configuration><scriptText>
+import com.eviware.soapui.support.XmlHolder
+import com.eviware.soapui.impl.wsdl.support.assertions.*
+
+
+def holder=new XmlHolder(messageExchange.responseContentAsXml)
+
+
+//assert holder["/*:Envelope/*:Body/*:OTA_HotelAvailRS"] != "Errors"
+def responseXml = holder.getPrettyXml()
+assert responseXml.contains('NumberOfUnits')
+//def holder = new XmlHolder( messageExchange.responseContentAsXml )
+
+//assert holder["/*:Envelope/*:soap-env:Body/*:OTA_HotelAvailRS/*:Warnings"] =closed</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:tearDownScript>// Code to execute the GenerateCSVReport test step
+testRunner.testCase.testSuite.project.testSuites["Library"].testCases["Reporting_Utility"].
+testSteps["GenerateCSVReport"].run(testRunner, context);</con:tearDownScript><con:properties/></con:testCase><con:testCase id="90dd0bf7-628d-4696-a1bd-319f6fe2fe4e" failOnError="false" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Single Rate code Single room code" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword=""><con:description>update the above property 2 and add BAR4 Double</con:description><con:settings/><con:testStep type="request" name="Single Rate code Single room code" id="ed5bad6b-0591-4cbb-a03a-82b6ffc49542"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HBSI_XML4_OTA_WebserviceSoap</con:interface><con:operation>PutSoapRequest</con:operation><con:request name="Single Rate code Single room code" id="703e8162-0d68-4484-a8dc-f04e0a8bd375"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://hotfix.hbsconnect.com/app/dm/xml</con:endpoint><con:request><![CDATA[<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap-env:Header>
+    <Interface ChannelIdentifierId="HBSI XML 4 OTA DC" Version="2005A" Interface="HBSI XML 4 OTA" xmlns="http://www.hbsiapi.com/Documentation/XML/OTA/4/2005A/">
+      <ComponentInfo Id="48811" User="test" Pwd="test"  ComponentType="Hotel"  />
+    </Interface>
+  </soap-env:Header>
+  <soap-env:Body RequestId="200708310425065wZvZr5Ofh" Transaction="HotelAvailRQ">
+    <OTA_HotelAvailRQ Target="Test" Version="1.003" TimeStamp="2006-12-14T15:28:29+01:00"
+    xmlns="http://www.opentravel.org/OTA/2003/05" BestOnly="false" SummaryOnly="false" SortOrder="A" MaxResponses="50000" >
+      <POS>
+        <Source>
+          <RequestorID Type="18" ID="Partner"/>
+          <BookingChannel Type="2" Primary="true">
+            <CompanyName>Hotel_Property</CompanyName>
+          </BookingChannel>
+        </Source>
+      </POS>
+      <AvailRequestSegments>
+        <AvailRequestSegment>
+          <HotelSearchCriteria>
+            <Criterion ImportanceType="Mandatory">
+              <StayDateRange Start="2021-03-10" Duration="Day" End="2021-03-15">
+              </StayDateRange>
+              <RateRange RoomStayCandidateRPH="0" MinRate="0.00" MaxRate="50000.00" RateTimeUnit="Day" CurrencyCode="USD"
+
+               DecimalPlaces="2">
+              </RateRange>
+              <RatePlanCandidates>
+                <RatePlanCandidate RatePlanCode="BAR1" RPH="1">
+                  <HotelRefs>
+                    <HotelRef HotelCode="48811" />
+                    <HotelRef HotelCode="48812" />
+                  </HotelRefs>
+                </RatePlanCandidate>
+              
+               
+              </RatePlanCandidates>
+              <RoomStayCandidates>
+                                <RoomStayCandidate RoomType="DELUXE" RoomTypeCode="DOUBLE"  Quantity="1"  RPH="2" RatePlanCandidateRPH="1">
+                  <GuestCounts IsPerRoom="true">
+                    <GuestCount AgeQualifyingCode="10"  Count="1"/>
+
+                  </GuestCounts>
+                </RoomStayCandidate>
+              </RoomStayCandidates>
+            </Criterion>
+
+          </HotelSearchCriteria>
+        </AvailRequestSegment>
+      </AvailRequestSegments>
+    </OTA_HotelAvailRQ>
+  </soap-env:Body>
+</soap-env:Envelope>]]></con:request><con:assertion type="GroovyScriptAssertion" id="84126843-d6ec-4c54-871f-c56735d781b0" name="Script Assertion"><con:configuration><scriptText>
+import com.eviware.soapui.support.XmlHolder
+import com.eviware.soapui.impl.wsdl.support.assertions.*
+
+
+def holder=new XmlHolder(messageExchange.responseContentAsXml)
+
+
+//assert holder["/*:Envelope/*:Body/*:OTA_HotelAvailRS"] != "Errors"
+def responseXml = holder.getPrettyXml()
+assert responseXml.contains('NumberOfUnits')
+//def holder = new XmlHolder( messageExchange.responseContentAsXml )
+
+//assert holder["/*:Envelope/*:soap-env:Body/*:OTA_HotelAvailRS/*:Warnings"] =closed</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:tearDownScript>// Code to execute the GenerateCSVReport test step
+testRunner.testCase.testSuite.project.testSuites["Library"].testCases["Reporting_Utility"].
+testSteps["GenerateCSVReport"].run(testRunner, context);</con:tearDownScript><con:properties/></con:testCase><con:testCase id="8af8f67d-c299-45fd-9af2-f0da72b0e813" failOnError="false" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Multirateplan single roomcode" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword=""><con:description>update the above property 2 and add BAR4 Double</con:description><con:settings/><con:testStep type="request" name="Multirateplan single roomcode" id="bd35769b-d7ae-4909-a0f3-333c5eae8487"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HBSI_XML4_OTA_WebserviceSoap</con:interface><con:operation>PutSoapRequest</con:operation><con:request name="Multirateplan single roomcode" id="703e8162-0d68-4484-a8dc-f04e0a8bd375"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://hotfix.hbsconnect.com/app/dm/xml</con:endpoint><con:request><![CDATA[<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap-env:Header>
+    <Interface ChannelIdentifierId="HBSI XML 4 OTA DC" Version="2005A" Interface="HBSI XML 4 OTA" xmlns="http://www.hbsiapi.com/Documentation/XML/OTA/4/2005A/">
+      <ComponentInfo Id="48811" User="test" Pwd="test"  ComponentType="Hotel"  />
+    </Interface>
+  </soap-env:Header>
+  <soap-env:Body RequestId="200708310425065wZvZr5Ofh" Transaction="HotelAvailRQ">
+    <OTA_HotelAvailRQ Target="Test" Version="1.003" TimeStamp="2006-12-14T15:28:29+01:00"
+    xmlns="http://www.opentravel.org/OTA/2003/05" BestOnly="false" SummaryOnly="false" SortOrder="A" MaxResponses="50000" >
+      <POS>
+        <Source>
+          <RequestorID Type="18" ID="Partner"/>
+          <BookingChannel Type="2" Primary="true">
+            <CompanyName>Hotel_Property</CompanyName>
+          </BookingChannel>
+        </Source>
+      </POS>
+      <AvailRequestSegments>
+        <AvailRequestSegment>
+          <HotelSearchCriteria>
+            <Criterion ImportanceType="Mandatory">
+              <StayDateRange Start="2021-03-04" Duration="Day" End="2021-03-09">
+              </StayDateRange>
+              <RateRange RoomStayCandidateRPH="0" MinRate="0.00" MaxRate="50000.00" RateTimeUnit="Day" CurrencyCode="USD"
+
+               DecimalPlaces="2">
+              </RateRange>
+              <RatePlanCandidates>
+                <RatePlanCandidate RatePlanCode="BAR1" RPH="1">
+                  <HotelRefs>
+                    <HotelRef HotelCode="48811" />
+                     <HotelRef HotelCode="48812" />
+                  </HotelRefs>
+                </RatePlanCandidate>
+               <RatePlanCandidate RatePlanCode="BAR4" RPH="1">
+                  <HotelRefs>
+                    <HotelRef HotelCode="48811" />
+                    <HotelRef HotelCode="48812" />
+                  </HotelRefs>
+                </RatePlanCandidate>
+               
+              </RatePlanCandidates>
+              <RoomStayCandidates>
+                                <RoomStayCandidate RoomType="DELUXE" RoomTypeCode="DOUBLE"  Quantity="1"  RPH="2" RatePlanCandidateRPH="1">
+                  <GuestCounts IsPerRoom="true">
+                    <GuestCount AgeQualifyingCode="10"  Count="1"/>
+
+                  </GuestCounts>
+                </RoomStayCandidate>
+              </RoomStayCandidates>
+            </Criterion>
+
+          </HotelSearchCriteria>
+        </AvailRequestSegment>
+      </AvailRequestSegments>
+    </OTA_HotelAvailRQ>
+  </soap-env:Body>
+</soap-env:Envelope>]]></con:request><con:assertion type="GroovyScriptAssertion" id="84126843-d6ec-4c54-871f-c56735d781b0" name="Script Assertion"><con:configuration><scriptText>
+import com.eviware.soapui.support.XmlHolder
+import com.eviware.soapui.impl.wsdl.support.assertions.*
+
+
+def holder=new XmlHolder(messageExchange.responseContentAsXml)
+
+
+//assert holder["/*:Envelope/*:Body/*:OTA_HotelAvailRS"] != "Errors"
+def responseXml = holder.getPrettyXml()
+assert responseXml.contains('NumberOfUnits')
+//def holder = new XmlHolder( messageExchange.responseContentAsXml )
+
+//assert holder["/*:Envelope/*:soap-env:Body/*:OTA_HotelAvailRS/*:Warnings"] =closed</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:tearDownScript>// Code to execute the GenerateCSVReport test step
+testRunner.testCase.testSuite.project.testSuites["Library"].testCases["Reporting_Utility"].
+testSteps["GenerateCSVReport"].run(testRunner, context);</con:tearDownScript><con:properties/></con:testCase><con:testCase id="2f47eb5a-8360-4707-9bc9-a3266cb8127b" failOnError="false" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Perform hotelcitycode search" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword=""><con:description>update the above property 2 and add BAR4 Double</con:description><con:settings/><con:testStep type="request" name="Perform hotelcitycode search" id="9e080434-eb41-4d65-8287-c503892b1d94"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HBSI_XML4_OTA_WebserviceSoap</con:interface><con:operation>PutSoapRequest</con:operation><con:request name="Perform hotelcitycode search" id="703e8162-0d68-4484-a8dc-f04e0a8bd375"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://hotfix.hbsconnect.com/app/dm/xml</con:endpoint><con:request><![CDATA[<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap-env:Header>
+    <Interface ChannelIdentifierId="HBSI XML 4 OTA DC" Version="2005A" Interface="HBSI XML 4 OTA" xmlns="http://www.hbsiapi.com/Documentation/XML/OTA/4/2005A/">
+      <ComponentInfo Id="48811" User="test" Pwd="test"  ComponentType="Hotel"  />
+    </Interface>
+  </soap-env:Header>
+  <soap-env:Body RequestId="200708310425065wZvZr5Ofh" Transaction="HotelAvailRQ">
+    <OTA_HotelAvailRQ Target="Test" Version="1.003" TimeStamp="2006-12-14T15:28:29+01:00"
+    xmlns="http://www.opentravel.org/OTA/2003/05" BestOnly="false" SummaryOnly="false" SortOrder="A" MaxResponses="50000" >
+      <POS>
+        <Source>
+          <RequestorID Type="18" ID="Partner"/>
+          <BookingChannel Type="2" Primary="true">
+            <CompanyName>Hotel_Property</CompanyName>
+          </BookingChannel>
+        </Source>
+      </POS>
+      <AvailRequestSegments>
+        <AvailRequestSegment>
+          <HotelSearchCriteria>
+            <Criterion ImportanceType="Mandatory">
+              <StayDateRange Start="2021-03-10" Duration="Day" End="2021-03-15">
+              </StayDateRange>
+              <RateRange RoomStayCandidateRPH="0" MinRate="0.00" MaxRate="50000.00" RateTimeUnit="Day" CurrencyCode="USD"
+
+               DecimalPlaces="2">
+              </RateRange>
+              <RatePlanCandidates>
+                <RatePlanCandidate RatePlanCode="BAR1" RPH="1">
+                  <HotelRefs>
+                    <HotelRef HotelCityCode="CVO" />
+                    
+                  </HotelRefs>
+                </RatePlanCandidate>
+                <RatePlanCandidate RatePlanCode="BAR4" RPH="1">
+                  <HotelRefs>
+                    <HotelRef HotelCityCode="CVO" />
+                  </HotelRefs>
+                </RatePlanCandidate>
+
+              </RatePlanCandidates>
+              <RoomStayCandidates>
+                <RoomStayCandidate RoomType="DOUBLE" RoomTypeCode="DOUBLE"  Quantity="1"  RPH="2" RatePlanCandidateRPH="1">
+                  <GuestCounts IsPerRoom="true">
+                    <GuestCount AgeQualifyingCode="10"  Count="1"/>
+
+                  </GuestCounts>
+                </RoomStayCandidate>
+                <RoomStayCandidate RoomType="DELUXE" RoomTypeCode="DELUXE"  Quantity="1"  RPH="2" RatePlanCandidateRPH="1">
+                  <GuestCounts IsPerRoom="true">
+                    <GuestCount AgeQualifyingCode="10"  Count="1"/>
+
+                  </GuestCounts>
+                </RoomStayCandidate>
+              </RoomStayCandidates>
+            </Criterion>
+
+          </HotelSearchCriteria>
+        </AvailRequestSegment>
+      </AvailRequestSegments>
+    </OTA_HotelAvailRQ>
+  </soap-env:Body>
+</soap-env:Envelope>]]></con:request><con:assertion type="GroovyScriptAssertion" id="84126843-d6ec-4c54-871f-c56735d781b0" name="Script Assertion"><con:configuration><scriptText>
+import com.eviware.soapui.support.XmlHolder
+import com.eviware.soapui.impl.wsdl.support.assertions.*
+
+
+def holder=new XmlHolder(messageExchange.responseContentAsXml)
+
+
+//assert holder["/*:Envelope/*:Body/*:OTA_HotelAvailRS"] != "Errors"
+def responseXml = holder.getPrettyXml()
+assert responseXml.contains('NumberOfUnits')
+//def holder = new XmlHolder( messageExchange.responseContentAsXml )
+
+//assert holder["/*:Envelope/*:soap-env:Body/*:OTA_HotelAvailRS/*:Warnings"] =closed</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:tearDownScript>// Code to execute the GenerateCSVReport test step
+testRunner.testCase.testSuite.project.testSuites["Library"].testCases["Reporting_Utility"].
+testSteps["GenerateCSVReport"].run(testRunner, context);</con:tearDownScript><con:properties/></con:testCase><con:testCase id="53bad038-515c-453c-99fa-616f95e36c25" failOnError="false" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Multirateplan single room code Neo ppty search only" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword=""><con:description>update the above property 2 and add BAR4 Double</con:description><con:settings/><con:testStep type="request" name="Multirateplan single room code Neo ppty search only" id="b7de361e-f534-4d91-8b48-a628b10696e6"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HBSI_XML4_OTA_WebserviceSoap</con:interface><con:operation>PutSoapRequest</con:operation><con:request name="Multirateplan single room code Neo ppty search only" id="703e8162-0d68-4484-a8dc-f04e0a8bd375"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://hotfix.hbsconnect.com/app/dm/xml</con:endpoint><con:request><![CDATA[<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap-env:Header>
+    <Interface ChannelIdentifierId="HBSI XML 4 OTA DC" Version="2005A" Interface="HBSI XML 4 OTA" xmlns="http://www.hbsiapi.com/Documentation/XML/OTA/4/2005A/">
+      <ComponentInfo Id="48814" User="test" Pwd="test"  ComponentType="Hotel"  />
+    </Interface>
+  </soap-env:Header>
+  <soap-env:Body RequestId="200708310425065wZvZr5Ofh" Transaction="HotelAvailRQ">
+    <OTA_HotelAvailRQ Target="Test" Version="1.003" TimeStamp="2006-12-14T15:28:29+01:00"
+    xmlns="http://www.opentravel.org/OTA/2003/05" BestOnly="false" SummaryOnly="false" SortOrder="A" MaxResponses="50000" >
+      <POS>
+        <Source>
+          <RequestorID Type="18" ID="Partner"/>
+          <BookingChannel Type="2" Primary="true">
+            <CompanyName>Hotel_Property</CompanyName>
+          </BookingChannel>
+        </Source>
+      </POS>
+      <AvailRequestSegments>
+        <AvailRequestSegment>
+          <HotelSearchCriteria>
+            <Criterion ImportanceType="Mandatory">
+              <StayDateRange Start="2021-03-10" Duration="Day" End="2021-03-15">
+              </StayDateRange>
+              <RateRange RoomStayCandidateRPH="0" MinRate="0.00" MaxRate="50000.00" RateTimeUnit="Day" CurrencyCode="USD"
+
+               DecimalPlaces="2">
+              </RateRange>
+              <RatePlanCandidates>
+                <RatePlanCandidate RatePlanCode="BAR1" RPH="1">
+                  <HotelRefs>
+                    <HotelRef HotelCode="48814" />
+                    <HotelRef HotelCode="48812" />
+                  </HotelRefs>
+                </RatePlanCandidate>
+                <RatePlanCandidate RatePlanCode="BAR4" RPH="1">
+                  <HotelRefs>
+                    <HotelRef HotelCode="48814" />
+                    <HotelRef HotelCode="48812" />
+                  </HotelRefs>
+                </RatePlanCandidate>
+
+              </RatePlanCandidates>
+              <RoomStayCandidates>
+                <RoomStayCandidate RoomType="DOUBLE" RoomTypeCode="DOUBLE"  Quantity="1"  RPH="2" RatePlanCandidateRPH="1">
+                  <GuestCounts IsPerRoom="true">
+                    <GuestCount AgeQualifyingCode="10"  Count="1"/>
+
+                  </GuestCounts>
+                </RoomStayCandidate>
+
+              </RoomStayCandidates>
+            </Criterion>
+
+          </HotelSearchCriteria>
+        </AvailRequestSegment>
+      </AvailRequestSegments>
+    </OTA_HotelAvailRQ>
+  </soap-env:Body>
+</soap-env:Envelope>]]></con:request><con:assertion type="GroovyScriptAssertion" id="84126843-d6ec-4c54-871f-c56735d781b0" name="Script Assertion"><con:configuration><scriptText>
+import com.eviware.soapui.support.XmlHolder
+import com.eviware.soapui.impl.wsdl.support.assertions.*
+
+
+def holder=new XmlHolder(messageExchange.responseContentAsXml)
+
+
+//assert holder["/*:Envelope/*:Body/*:OTA_HotelAvailRS"] != "Errors"
+def responseXml = holder.getPrettyXml()
+assert responseXml.contains('NumberOfUnits')
+//def holder = new XmlHolder( messageExchange.responseContentAsXml )
+
+//assert holder["/*:Envelope/*:soap-env:Body/*:OTA_HotelAvailRS/*:Warnings"] =closed</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:tearDownScript>// Code to execute the GenerateCSVReport test step
+testRunner.testCase.testSuite.project.testSuites["Library"].testCases["Reporting_Utility"].
+testSteps["GenerateCSVReport"].run(testRunner, context);</con:tearDownScript><con:properties/></con:testCase><con:testCase id="166f8b8a-c29a-4645-9f50-047b564dc5a4" failOnError="false" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Verify past date search" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword=""><con:description>update the above property 2 and add BAR4 Double</con:description><con:settings/><con:testStep type="request" name="Verify past date search" id="8c3b83de-e3bb-4196-a112-a84d4f9ae489"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HBSI_XML4_OTA_WebserviceSoap</con:interface><con:operation>PutSoapRequest</con:operation><con:request name="Verify past date search" id="703e8162-0d68-4484-a8dc-f04e0a8bd375"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://hotfix.hbsconnect.com/app/dm/xml</con:endpoint><con:request><![CDATA[<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap-env:Header>
+    <Interface ChannelIdentifierId="HBSI XML 4 OTA DC" Version="2005A" Interface="HBSI XML 4 OTA" xmlns="http://www.hbsiapi.com/Documentation/XML/OTA/4/2005A/">
+      <ComponentInfo Id="48811" User="test" Pwd="test"  ComponentType="Hotel"  />
+    </Interface>
+  </soap-env:Header>
+  <soap-env:Body RequestId="200708310425065wZvZr5Ofh" Transaction="HotelAvailRQ">
+    <OTA_HotelAvailRQ Target="Test" Version="1.003" TimeStamp="2006-12-14T15:28:29+01:00"
+    xmlns="http://www.opentravel.org/OTA/2003/05" BestOnly="false" SummaryOnly="false" SortOrder="A" MaxResponses="50000" >
+      <POS>
+        <Source>
+          <RequestorID Type="18" ID="Partner"/>
+          <BookingChannel Type="2" Primary="true">
+            <CompanyName>Hotel_Property</CompanyName>
+          </BookingChannel>
+        </Source>
+      </POS>
+      <AvailRequestSegments>
+        <AvailRequestSegment>
+          <HotelSearchCriteria>
+            <Criterion ImportanceType="Mandatory">
+              <StayDateRange Start="2021-01-01" Duration="Day" End="2021-01-04">
+              </StayDateRange>
+              <RateRange RoomStayCandidateRPH="0" MinRate="0.00" MaxRate="50000.00" RateTimeUnit="Day" CurrencyCode="USD"
+
+               DecimalPlaces="2">
+              </RateRange>
+              <RatePlanCandidates>
+                <RatePlanCandidate RatePlanCode="BAR1" RPH="1">
+                  <HotelRefs>
+                    <HotelRef HotelCode="48811" />
+                  </HotelRefs>
+                </RatePlanCandidate>
+                <RatePlanCandidate RatePlanCode="BAR4" RPH="1">
+                  <HotelRefs>
+                    <HotelRef HotelCode="48811" />
+                  </HotelRefs>
+                </RatePlanCandidate>
+                <RatePlanCandidate RatePlanCode="BAR1" RPH="1">
+                  <HotelRefs>
+                    <HotelRef HotelCode="48812" />
+                  </HotelRefs>
+                </RatePlanCandidate>
+                <RatePlanCandidate RatePlanCode="BAR4" RPH="1">
+                  <HotelRefs>
+                    <HotelRef HotelCode="48812" />
+                  </HotelRefs>
+                </RatePlanCandidate>
+              </RatePlanCandidates>
+              <RoomStayCandidates>
+                <RoomStayCandidate RoomType="DELUXE" RoomTypeCode="DELUXE"  Quantity="1"  RPH="2" RatePlanCandidateRPH="1">
+                  <GuestCounts IsPerRoom="true">
+                    <GuestCount AgeQualifyingCode="10"  Count="1"/>
+
+                  </GuestCounts>
+                </RoomStayCandidate>
+                <RoomStayCandidate RoomType="DOUBLE" RoomTypeCode="DOUBLE"  Quantity="1"  RPH="2" RatePlanCandidateRPH="1">
+                  <GuestCounts IsPerRoom="true">
+                    <GuestCount AgeQualifyingCode="10"  Count="1"/>
+
+                  </GuestCounts>
+                </RoomStayCandidate>
+              </RoomStayCandidates>
+            </Criterion>
+            
+          </HotelSearchCriteria>
+        </AvailRequestSegment>
+      </AvailRequestSegments>
+    </OTA_HotelAvailRQ>
+  </soap-env:Body>
+</soap-env:Envelope>]]></con:request><con:assertion type="GroovyScriptAssertion" id="84126843-d6ec-4c54-871f-c56735d781b0" name="Script Assertion"><con:configuration><scriptText>
+import com.eviware.soapui.support.XmlHolder
+import com.eviware.soapui.impl.wsdl.support.assertions.*
+
+
+def holder=new XmlHolder(messageExchange.responseContentAsXml)
+
+
+//assert holder["/*:Envelope/*:Body/*:OTA_HotelAvailRS"] != "Errors"
+def responseXml = holder.getPrettyXml()
+assert responseXml.contains('Arrival of one or more rows is in the past')
+//def holder = new XmlHolder( messageExchange.responseContentAsXml )
+
+//assert holder["/*:Envelope/*:soap-env:Body/*:OTA_HotelAvailRS/*:Warnings"] =closed</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:tearDownScript>// Code to execute the GenerateCSVReport test step
+testRunner.testCase.testSuite.project.testSuites["Library"].testCases["Reporting_Utility"].
+testSteps["GenerateCSVReport"].run(testRunner, context);</con:tearDownScript><con:properties/></con:testCase><con:testCase id="007778c7-e433-49df-9c2c-716e06b299e5" failOnError="false" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Verify Inactive Rate plan search" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword=""><con:description>update the above property 2 and add BAR4 Double</con:description><con:settings/><con:testStep type="request" name="Verify Inactive Rate plan search" id="98f259bd-29b4-41fa-8d1e-a45208f1b77f"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>HBSI_XML4_OTA_WebserviceSoap</con:interface><con:operation>PutSoapRequest</con:operation><con:request name="Verify Inactive Rate plan search" id="703e8162-0d68-4484-a8dc-f04e0a8bd375"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://hotfix.hbsconnect.com/app/dm/xml</con:endpoint><con:request><![CDATA[<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap-env:Header>
+    <Interface ChannelIdentifierId="HBSI XML 4 OTA DC" Version="2005A" Interface="HBSI XML 4 OTA" xmlns="http://www.hbsiapi.com/Documentation/XML/OTA/4/2005A/">
+      <ComponentInfo Id="48811" User="test" Pwd="test" ComponentType="Hotel" />
+    </Interface>
+  </soap-env:Header>
+  <soap-env:Body RequestId="200708310425065wZvZr5Ofh" Transaction="HotelAvailRQ">
+    <OTA_HotelAvailRQ Target="Test" Version="1.003" TimeStamp="2006-12-14T15:28:29+01:00" xmlns="http://www.opentravel.org/OTA/2003/05" BestOnly="false" SummaryOnly="false" SortOrder="A" MaxResponses="50000">
+      <POS>
+        <Source>
+          <RequestorID Type="18" ID="Partner" />
+          <BookingChannel Type="2" Primary="true">
+            <CompanyName>Hotel_Property</CompanyName>
+          </BookingChannel>
+        </Source>
+      </POS>
+      <AvailRequestSegments>
+        <AvailRequestSegment>
+          <HotelSearchCriteria>
+            <Criterion ImportanceType="Mandatory">
+              <StayDateRange Start="2021-03-22" Duration="Day" End="2021-03-23"/>
+              <RateRange RoomStayCandidateRPH="0" MinRate="0.00" MaxRate="50000.00" RateTimeUnit="Day" CurrencyCode="USD" DecimalPlaces="2"/>
+              <RatePlanCandidates>
+                <RatePlanCandidate RatePlanCode="BAR1" RPH="1">
+                  <HotelRefs>
+                    <HotelRef HotelCode="48811" />
+                  </HotelRefs>
+                </RatePlanCandidate>
+                <RatePlanCandidate RatePlanCode="RACKRATE" RPH="1">
+                  <HotelRefs>
+                    <HotelRef HotelCode="48811" />
+                  </HotelRefs>
+                </RatePlanCandidate>
+                <RatePlanCandidate RatePlanCode="BAR4" RPH="1">
+                  <HotelRefs>
+                    <HotelRef HotelCode="48811" />
+                  </HotelRefs>
+                </RatePlanCandidate>
+                <RatePlanCandidate RatePlanCode="BAR1" RPH="1">
+                  <HotelRefs>
+                    <HotelRef HotelCode="48812" />
+                  </HotelRefs>
+                </RatePlanCandidate>
+                <RatePlanCandidate RatePlanCode="BAR4" RPH="1">
+                  <HotelRefs>
+                    <HotelRef HotelCode="48812" />
+                  </HotelRefs>
+                </RatePlanCandidate>
+              </RatePlanCandidates>
+              <RoomStayCandidates>
+                <RoomStayCandidate RoomType="DELUXE" RoomTypeCode="DELUXE" Quantity="1" RPH="2" RatePlanCandidateRPH="1">
+                  <GuestCounts IsPerRoom="true">
+                    <GuestCount AgeQualifyingCode="10" Count="1" />
+                  </GuestCounts>
+                </RoomStayCandidate>
+                <RoomStayCandidate RoomType="DOUBLE" RoomTypeCode="DOUBLE" Quantity="1" RPH="2" RatePlanCandidateRPH="1">
+                  <GuestCounts IsPerRoom="true">
+                    <GuestCount AgeQualifyingCode="10" Count="1" />
+                  </GuestCounts>
+                </RoomStayCandidate>
+              </RoomStayCandidates>
+            </Criterion>
+          </HotelSearchCriteria>
+        </AvailRequestSegment>
+      </AvailRequestSegments>
+    </OTA_HotelAvailRQ>
+  </soap-env:Body>
+</soap-env:Envelope>]]></con:request><con:assertion type="GroovyScriptAssertion" id="84126843-d6ec-4c54-871f-c56735d781b0" name="Script Assertion"><con:configuration><scriptText>
+import com.eviware.soapui.support.XmlHolder
+import com.eviware.soapui.impl.wsdl.support.assertions.*
+
+
+def holder=new XmlHolder(messageExchange.responseContentAsXml)
+
+
+//assert holder["/*:Envelope/*:Body/*:OTA_HotelAvailRS"] != "Errors"
+def responseXml = holder.getPrettyXml()
+assert responseXml!='RACKRATE'
+//def holder = new XmlHolder( messageExchange.responseContentAsXml )
+
+//assert holder["/*:Envelope/*:soap-env:Body/*:OTA_HotelAvailRS/*:Warnings"] =closed</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:tearDownScript>// Code to execute the GenerateCSVReport test step
+testRunner.testCase.testSuite.project.testSuites["Library"].testCases["Reporting_Utility"].
+testSteps["GenerateCSVReport"].run(testRunner, context);</con:tearDownScript><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="c007f2fb-37e9-43a2-8932-6363dd032b65" name="Library" disabled="true"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="88c97981-f0a4-4521-82d8-0b01dc66eb6c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Reporting_Utility" searchProperties="true"><con:settings/><con:testStep type="groovy" name="GenerateCSVReport" id="26f01315-a60e-49ff-968d-3393a18122b0"><con:settings/><con:config><script>try {
+
+// 1. Create a "SoapUIResults" folder in the project path 
+      // Retrieve the project root folder
+      def projectPath = new com.eviware.soapui.support.GroovyUtils(context).projectPath
+
+      // Specify a folder inside project root to store the results
+      String folderPath = projectPath + "/SoapUIResults";
+
+      // Create a File object for the specified path
+      def resultFolder = new File(folderPath);
+
+      // Check for existence of folder and create a folder
+      if(!resultFolder.exists())
+      {
+        resultFolder.mkdirs();
+      }
+
+/* ------------------------------------------------------------------------------- */
+
+// 2. Create a subfolder (with timestamp) to store the request-response local copy 
+      // Retrieve the latest execution date-time
+      Date d = new Date();
+      def executionDate = d.format("dd-MMM-yyyy HH_mm");
+
+      // Specify the subfolder path with name Request-Response_CurrentTimeStamp
+      String subfolderPath1 = folderPath+ "/Request-Response_"+executionDate;
+
+      // Create this sub-folder
+      new File(subfolderPath1).mkdirs();
+
+/* ------------------------------------------------------------------------------- */
+
+// 3. Create another subfolder "CSV Reports" to store the reports file 
+      // Specify the subfolder path with name CSV Reports
+      String subfolderPath2 = folderPath+ "/CSV Reports";
+
+      // Create this sub-folder
+      new File(subfolderPath2).mkdirs();
+
+/* ------------------------------------------------------------------------------- */
+
+// 4. Create a Report.csv file inside the CSV Reports folder 
+      // Create a File object for Report csv file (with timestamp)
+      def reportFile = new File(subfolderPath2, "Report_"+executionDate+".csv");
+
+      // Check for existence of report file and create a file
+      if(!reportFile.exists())
+      {
+        reportFile.createNewFile();
+        // Create required column names in the report file
+        reportFile.write('"Test Suite","Test Case","Test Step","Step Type","Step Status",'
+                        +'"Result message","Execution Date"');
+      }
+/* ------------------------------------------------------------------------------- */
+// 5. Inserting data in the file
+      // Iterate over all the test steps results
+  for(stepResult in testRunner.getResults())
+  {
+    // Retrieve Test Suite name
+   def testSuite = testRunner.testCase.testSuite.name;
+   // Retrieve Test Case name
+   def testCase = testRunner.testCase.name;
+   // Retrieve Test Step
+   def testStep = stepResult.getTestStep();
+   // Retrieve Test Step name
+   def testStepName = testStep.name
+   // Retrieve Test Step type
+   def type = testStep.config.type
+   // Retrieve Test Step status
+   def status = stepResult.getStatus()
+
+   // Creating new line in report file
+   reportFile.append('\n');
+
+   // Write all the necessary information in the file
+   reportFile.append('"' + testSuite + '",');
+   reportFile.append('"' + testCase + '",');
+   reportFile.append('"' + testStepName + '",');
+   reportFile.append('"' + type + '",');
+   reportFile.append('"' + status + '",');
+
+   // Retrieve the test result messages
+   reportFile.append('"');
+   for(resMessage in stepResult.getMessages())
+   {
+     // Write messages and separate multiple messages by new line
+     reportFile.append('Message:' + resMessage + '\n');
+   }
+   reportFile.append('",');
+
+   //Write executionDate in the file
+   reportFile.append('"' + executionDate + '",');
+/* ------------------------------------------------------------------------------- */
+// 6. Extract the request and response and save it to external file
+      // Verify if the test step type is request: SOAP project or restrequest: REST project
+        if((type=="request").or(type=="restrequest"))
+        {
+          // Extract the request from the test step
+          def extRequest = testStep.properties["Request"].value;    
+
+      // Create a file in the reports folder and write the request
+      // Naming convention: request_TestSuiteName_TestCaseName_TestStepName.txt
+      def requestFile=subfolderPath1+"/request_"+testSuite+"_"+testCase+"_"+testStepName+".txt";
+      def rqfile = new File(requestFile);
+      rqfile.write(extRequest, "UTF-8");
+
+      // Extract the response from the test step
+      def extResponse = stepResult.getResponseContent();    
+
+      // Create a file in the reports folder and write the response
+      // Naming convention: response_TestSuiteName_TestCaseName_TestStepName.txt
+      def responseFile=subfolderPath1+"/response_"+testSuite+"_"+testCase+"_"+testStepName+".txt";
+      def rsfile = new File(responseFile);
+      rsfile.write(extResponse, "UTF-8");
+     }
+   }
+ }
+catch(exc)
+{
+   log.error("Exception happened: " + exc.toString());
+}</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
